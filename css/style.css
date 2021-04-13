@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Carme', sans-serif;
+}
+
+
+li{
+    list-style: none;
+}
+
+
+
+/* abaixo estilo da capa */
+
+main section.capa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 25pt;
+    text-align: center;
+    background-color: rgba(158, 236, 217, 0.171);
+    background-position: 50%;
+    color: rgb(0, 0, 0);
+    height: 300px;
+    margin-left: 5%;
+    margin-right: 5%;
+    
+}
+
+/* Abaixo estilo do perfil */
+
+ section.perfil {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgb(255, 255, 255);
+    
+}
+
+ section.perfil div#perfil img{
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 10px 0px;
+}
+
+ section.perfil div#perfil{
+    position: relative;
+    border: 1px solid ;
+    border-radius: 50%;
+    width: 220px;
+    height: 220px;
+    margin: 10px 0px;
+    background-color: white;
+}
+
+/* abaixo estilo das habilidades */
+
+section.perfil div#habilidade{
+    margin-top: 80px;
+    margin: 20px 0px;
+}
+
+/* abaixo estilos das skills */
+
+section.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: bisque;
+    color: rgb(2, 0, 0);
+}
+
+section.skills div {
+    margin: 20px 5px;
+}
+
+/* abaixo esta os estilos dos botoes/links */
+
+main section.contatos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+main section.contatos ul li {
+    margin-top: 30px; 
+}
+
+main section.contatos ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border: 1px solid;
+    border-radius: 30px;
+    width: 100px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+main section.contatos ul li a#linkedin{
+    background-color: rgb(0, 119, 255);
+    color: white;
+}
+
+
+main section.contatos ul li a#github{
+    background-color: rgb(248, 141, 0);
+    color: white;
+}
+
+main section.contatos ul li a#linkedin:hover{
+   transition: all .4s;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 119, 255);
+}
+
+
+main section.contatos ul li a#github:hover{
+    transition: all .4s;
+    background-color: white;
+    color: rgb(248, 141, 0);
+}
+
+@media (min-width:800px) {
+
+
+    main section.contatos ul li {
+        margin: 20px 10px;
+    }
+    
+    main section.contatos ul{
+        display: flex;
+        flex-direction: row;
+        margin: 0px;
+        transition: all .5s;
+        
+        
+    }
+
+    section.skills {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-left: 10%;
+        margin-right: 10%;
+        
+    }
+    
+    section.skills div {
+      margin: 10px 10px;
+      height: 200px;
+      width: 300px;
+        
+    }
+
+}
